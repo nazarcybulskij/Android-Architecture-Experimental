@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <CheckBox
+        android:id="@+id/statusTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="4dp" />
+
+    <TextView
+        android:id="@+id/nameTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/statusTask"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:text="default text " />
+
+    <TextView
+        android:id="@+id/noteTask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTask"
+        android:layout_toRightOf="@+id/statusTask"
+        tools:text="default text " />
+
+</RelativeLayout>
